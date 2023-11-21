@@ -10,13 +10,14 @@
 <div class="calculator">
   <input type="text" id="display" class="display" readonly>
   <div class="buttons">
-    <button onclick="clearDisplay()">C</button>
+    <button onclick="clearDisplay()" class="clear">C</button>
+    <button disabled></button>
+    <button disabled></button>
     <button onclick="appendCharacter('/')">/</button>
-    <button onclick="appendCharacter('*')">*</button>
     <button onclick="appendCharacter('7')">7</button>
     <button onclick="appendCharacter('8')">8</button>
     <button onclick="appendCharacter('9')">9</button>
-    <button onclick="appendCharacter('-')">-</button>
+    <button onclick="appendCharacter('*')">*</button>
     <button onclick="appendCharacter('4')">4</button>
     <button onclick="appendCharacter('5')">5</button>
     <button onclick="appendCharacter('6')">6</button>
@@ -24,9 +25,11 @@
     <button onclick="appendCharacter('1')">1</button>
     <button onclick="appendCharacter('2')">2</button>
     <button onclick="appendCharacter('3')">3</button>
-    <button onclick="calculateResult()">=</button>
-    <button onclick="appendCharacter('0')">0</button>
+    <button onclick="appendCharacter('-')">-</button>
     <button onclick="appendCharacter('.')">.</button>
+    <button onclick="appendCharacter('0')" class="zero">0</button>
+    <button disabled></button>
+    <button onclick="calculateResult()" id="equalsBtn" disabled>=</button>
   </div>
 </div>
 
